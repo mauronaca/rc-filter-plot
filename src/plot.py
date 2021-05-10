@@ -24,11 +24,11 @@ def encontrar_cercano(arr, value, buffer):
     return array[idx]
 
 
-#initialize serial port
+#Inicializar el puerto serial
 ser = serial.Serial()
-ser.port = 'COM3' #Arduino serial port
+ser.port = 'COM3' # Puerto USB al arduino
 ser.baudrate = 9600
-ser.timeout = None #specify timeout when using readline()
+ser.timeout = None # Timeout
 ser.open()
 
 #fs = 2867.6
